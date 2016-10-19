@@ -97,3 +97,12 @@ footer p {
   min-height: 100px;
   display: inline-block;
 }
+
+#submit-button{
+  width: 100px;
+  height: 25px;
+  border: 1px solid #616b8b;
+  border-radius: 5px;
+  background-color: #FFF;
+  text-align: center;
+}
