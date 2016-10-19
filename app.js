@@ -43,11 +43,9 @@ $('document').ready(function() {
 			$($seat).removeClass('available').addClass('reserved');
 			var $name = $('input[type=name]').val();
 			var $email = $('input[type=email]').val();
-
-			$('#res-list').append('<div id = "seat-reservation">');
-			$('#seat-reservation').append($name);
+			$('.seat-chart').after('<div id = "seat-reservation">');
+			$('#seat-reservation').append($name + " : ");
 			$('#seat-reservation').append($email);
-
 			$('#contact-form').remove();
 
 		});
