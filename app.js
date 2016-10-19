@@ -41,9 +41,13 @@ $('document').ready(function() {
 		$('#submit-button').on('click', function() {
 			//change the color of the seat from available to reserved
 			$($seat).removeClass('available').addClass('reserved');
-			$name = $('input[type=name]').val();
-			$email = $('input[type=email]').val();
-			console.log($name);
+			var $name = $('input[type=name]').val();
+			var $email = $('input[type=email]').val();
+
+			$('#res-list').append('<div id = "seat-reservation">');
+			$('#seat-reservation').append($name);
+			$('#seat-reservation').append($email);
+
 			$('#contact-form').remove();
 
 		});
