@@ -1,0 +1,99 @@
+body {
+  background-color: #FFF;
+}
+
+header {
+  background-color: #FFF;
+  width: 100%;
+  border-bottom: 2px solid #101a45;
+}
+
+header img {
+  width: 15%;
+  display: block;
+  margin: 0px auto 10px;
+}
+
+footer {
+  background-color: #616b8b;
+  margin-top: 50px;
+  bottom: 0px;
+  width: 100%;
+  border-top: 2px solid #101a45;
+
+}
+
+footer p {
+ color: #cdd2e2;
+ padding-left: 10px;
+ margin-bottom: 0px;
+
+}
+
+#color-bar {
+  background-color: #616b8b;
+  height: 30px;
+}
+
+#info{
+  background-color: #FFF;
+  height: 75px;
+}
+
+#info p {
+  color: #000;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#info ul {
+  margin: 0px auto;
+  width: 25%;
+}
+
+#info ul li {
+ display: inline;
+ font-size: 16px;
+ font-style: italic;
+ color: #101a45;
+ margin-right: 2%;
+}
+
+#info ul li:last-child {
+  color:#76643e;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.seat-chart {
+  /*background-color: #e7d4ab;*/
+  /*background-color: #616b8b;*/
+  background-color: rgba(97,107,139, .2);
+  width: 90%;
+  margin: 0px auto 0px;
+  padding: 1.5%;
+  border: 1px solid #616b8b;
+  border-radius: 10px;
+}
+
+.available {
+  background: url(images/seat.png) center no-repeat;
+  background-size: contain;
+  /*background-color: green;*/
+  width: 24%;
+  margin: auto;
+  min-height: 100px;
+  display: inline-block;
+}
+
+.reserved {
+  background: url(images/res_seat.png) center no-repeat;
+  background-size: contain;
+  /*background-color: red;*/
+  width: 24%;
+  margin: auto;
+  min-height: 100px;
+  display: inline-block;
+}
