@@ -106,3 +106,14 @@ footer p {
   background-color: #FFF;
   text-align: center;
 }
+
+#res-list {
+
+  background-color: rgba(97,107,139, .2);
+  width: 90%;
+  margin: 10px auto 0px;
+  padding: 1.5%;
+  border: 1px solid #616b8b;
+  border-radius: 10px;
+  /*display: none;*/
+}
