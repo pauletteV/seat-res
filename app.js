@@ -1,5 +1,5 @@
 $('document').ready(function() {
-	
+
  //create a variable to hold a reference to 'this' /exact seat that was clicked
  var $seat;
 
@@ -15,17 +15,17 @@ $('document').ready(function() {
 	  	//dynamically create the form on click
 	  	//$('#contact-form').prepend('<form id="reserveSeatForm"><label>Name:  <input type="name" name="name" placeholder="Your Name"></input></label></ br><label>Email:  <input type="email" name="email-address" placeholder="johnsmith@abc.com"></input></label><button type="sumbit">Submit</button></form>');
 	  	$('#contact-form').prepend('<form id="reserveSeatForm"><label>Name:  <input type="name" name="name" placeholder="Your Name"></input></label></ br><label>Email:  <input type="email" name="email-address" placeholder="johnsmith@abc.com"></input></label></form><div id="submit-button">Reserve Seat</div>');
-	
-		/*not available to us without loading another libraray*/	
-	    	//$(this).switchClass("available", "reserved", 1000); 
 
-	    /*this DOES change our seat color, BUT once the submit button reloads the page... 
-	    the .availble class is added back on. Trying to push this to the click handler 
-	    of the "reserve seat button*/ 
-	    	//$(this).removeClass("available").addClass("reserved"); 
-	    
+		/*not available to us without loading another libraray*/
+	    	//$(this).switchClass("available", "reserved", 1000);
+
+	    /*this DOES change our seat color, BUT once the submit button reloads the page...
+	    the .availble class is added back on. Trying to push this to the click handler
+	    of the "reserve seat button*/
+	    	//$(this).removeClass("available").addClass("reserved");
+
 	    //once the form elements have been loaded into the DOM...add listeners to them
-	    addListeners(); 
+	    addListeners();
 	});
 
   	function addListeners() {
@@ -36,14 +36,16 @@ $('document').ready(function() {
 	  	$('#submit-button').mouseleave(function() {
 	  		$(this).fadeTo(0, 1);
 	  	});
-	  	
+
+//	var $contact-form = $('#contact-form');
 		$('#submit-button').on('click', function() {
 			//change the color of the seat from available to reserved
 			$($seat).removeClass('available').addClass('reserved');
+			$name = $('input[type=name]').val();
+			$email = $('input[type=email]').val();
+			console.log($name);
+			$('#contact-form').remove();
 
-			//manually clear the form fields
-			$('input[type=name').val("");
-			$('input[type=email').val("");
 		});
 	}
 });
