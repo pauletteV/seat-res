@@ -11,10 +11,11 @@ $('document').ready(function() {
 
   		//create the div to hold the form
 	  	$('.seat-chart').append('<div id = "contact-form">');
-
 	  	//dynamically create the form on click
 	  	//$('#contact-form').prepend('<form id="reserveSeatForm"><label>Name:  <input type="name" name="name" placeholder="Your Name"></input></label></ br><label>Email:  <input type="email" name="email-address" placeholder="johnsmith@abc.com"></input></label><button type="sumbit">Submit</button></form>');
 	  	$('#contact-form').prepend('<form id="reserveSeatForm"><label>Name:  <input type="name" name="name" placeholder="Your Name"></input></label></ br><label>Email:  <input type="email" name="email-address" placeholder="johnsmith@abc.com"></input></label></form><div id="submit-button">Reserve Seat</div>');
+      location.href = "#contact-form";
+
 
 		/*not available to us without loading another libraray*/
 	    	//$(this).switchClass("available", "reserved", 1000);
